@@ -1,0 +1,117 @@
+/* General styling */
+/* Example using the "Tajawal" font */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #381515;
+    text-align: center;
+    background-image: url('pattern.svg');
+    background-size: 100%;
+    background-position: cover;
+    background-repeat: repeat;
+}
+
+h1 {
+    color: #f4ecd8;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+
+.map {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px; 
+}
+
+.map-img {
+    width: 100%; 
+    height: auto; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.popup-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+/* Modal window styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    overflow: hidden;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.modal-content {
+    background-image: url('Papyrus\ paper.svg'); /* Papyrus background */
+    background-size: contain; /* Ensures background scales properly */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-position: center; /* Keeps the background centered */
+    padding: 100px;
+    margin: 10% auto;
+    width: 100%;
+    max-width: 600px; /* Limit maximum width on large screens */
+    height: auto;
+    max-height: 80vh; /* Limits height to 80% of the viewport */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+    border-radius: 15px; /* Soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    color: #4B2E2E; /* Ancient looking text color */
+    font-family: 'Tajawal', sans-serif; /* Tajawal font */
+    font-weight: bold;
+    box-sizing: border-box; /* Ensures padding and borders are included in width */
+}
+
+/* Close button styling */
+.close-btn {
+    color: #333; /* Darker color for close button */
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+/* Make text and elements more mobile-friendly */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+    
+    .popup-btn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .modal-content {
+        width: 95%; /* More responsive for small screens */
+        max-width: none; /* Removes max-width limitation */
+        padding: 60px; /* Reduces padding */
+        font-size: x-small;
+    }
+
+    .modal {
+        padding: 10px; /* Adds extra padding to avoid clipping */   
+    }
+}
