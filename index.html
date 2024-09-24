@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خيمة التحنيط</title>
+    <link rel="stylesheet" href="stylesheet4.css">
+</head>
+<body>
+
+    <h1>خيمة التحنيط</h1>
+
+    <video autoplay loop muted controls style="width: 95%; border-radius: 10px;">
+        <source src="tent 4 video.mp4" type="video/mp4">
+    </video>
+
+    <div> <br> <h2 style="color:  #f4ecd8; font-size: small;">اضغط على التابوت للتعرف على الورشة</h2>
+
+
+    <div class="map" id="map1">
+        <img src="tent 4 03.jpg" alt="Map 1" class="map-img">
+        <button class="popup-btn" style="top: 50%; left: 40%;" data-workshop="workshopPSC"><img src="Coffin.png" alt="Icon" style="width:100px; height: 100px;"></button>
+    </div>
+    </div>
+    
+  <!-- Popup Modal -->
+  <div id="popup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="workshop-title"></h2>
+        <p id="workshop-description"></p>
+        <p dir="rtl">
+            <img src="Age icon.svg" alt="Age Icon" style="width: 20px; height: 10px; margin-inline-end: 5px;">
+        <strong>الفئة العمرية:</strong> 
+            <span id="workshop-age"></span>
+        </p>
+        <p dir="rtl">
+            <img src="Timer icon.svg" alt="Timer Icon" style="width: 10px; height: 10px; margin-left: 5px; vertical-align: middle;">
+            <strong>مدة الورشة:</strong> 
+            <span id="workshop-time"></span> 
+        </p>
+    </div>
+</div>
+
+<br><img src="psc logo.svg" style="width: 40%;">
+
+<script src="page4 script.js"></script>
+</body>
+</html>
